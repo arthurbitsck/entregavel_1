@@ -23,23 +23,23 @@ function calcular() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function Calculadora(numero1, numero2, operador) {
-  //ESCREVA SEU CÓDIGO AQUI!!
-  let resultado
+  // ESCREVA SEU CÓDIGO AQUI
   let num1 = Number(numero1)
   let num2 = Number(numero2)
+  let resultado
 
   switch (operador) {
-    case '+': 
-    resultado = num1 + num2
-    break;
+    case '+':
+       resultado = num1 + num2
+      break;
 
     case '-':
       resultado = num1 - num2
-    break;
+      break;
 
     case '/':
       resultado = num1 / num2
-    break;
+      break;
 
     case '*':
       resultado = num1 * num2
@@ -49,14 +49,15 @@ function Calculadora(numero1, numero2, operador) {
       let contador = 1
       resultado = num1 * num1
       while (contador < num2 - 1) {
-        resultado = resultado * num1
+        resultado = resultado * num1 
         contador++
       }
       break;
 }
-if(resultado === undefined || resultado > 1000000){
-  resultado = 'ERRO'
-}
-return resultado 
 
+  if(resultado === undefined || resultado > 1000000){
+    resultado = 'ERRO'
+  }
+
+  return resultado
 }
